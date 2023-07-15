@@ -27,12 +27,19 @@ while True:
     y2_shift = y2 << 8
     z1_shift = z1 << 8
     z2_shift = z2 << 8
-    
-    print(bin(x1_shift))
-    print(bin(x2_shift))
-    print(bin(y1_shift))
-    print(bin(y2_shift))
-    print(bin(z1_shift))
-    print(bin(z2_shift))
+
+    print("------------")
+    # print(bin(x1_shift))
+    # print(bin(x2_shift))
+    # print(bin(y1_shift))
+    # print(bin(y2_shift))
+    # print(bin(z1_shift))
+    # print(bin(z2_shift))
+    print(bin(x1))
+    print(bin(x2))
+    print(bin(y1))
+    print(bin(y2))
+    print(bin(z1))
+    print(bin(z2))
 
     time.sleep(0.5)
