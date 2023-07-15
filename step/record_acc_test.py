@@ -14,10 +14,25 @@ ret = i2c.write_byte_data(address, 0x31, 0x0b)
 while True:
     
     #データ読み込み
-    xh = i2c.read_byte_data(address, 0x32)
-    print("xh")
-    print(bin(xh))
+    x1 = i2c.read_byte_data(address, 0x32)
+    x2 = i2c.read_byte_data(address, 0x33)
+    y1 = i2c.read_byte_data(address, 0x34)
+    y2 = i2c.read_byte_data(address, 0x35)
+    z1 = i2c.read_byte_data(address, 0x36)
+    z2 = i2c.read_byte_data(address, 0x37)
 
-    print("xh_shift")
-    xh_shift = xh << 8
-    print(bin(xh_shift))
+    x1_shift = x1 << 8
+    x2_shift = x2 << 8
+    y1_shift = y1 << 8
+    y2_shift = y2 << 8
+    z1_shift = z1 << 8
+    z2_shift = z2 << 8
+    
+    print(bin(x1_shift))
+    print(bin(x2_shift))
+    print(bin(y1_shift))
+    print(bin(y2_shift))
+    print(bin(z1_shift))
+    print(bin(z2_shift))
+
+    time.slep(0.5)
