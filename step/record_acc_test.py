@@ -35,4 +35,4 @@ while True:
     print(bin(z1_shift))
     print(bin(z2_shift))
 
-    time.slep(0.5)
+    time.sleep(0.5)
