@@ -15,7 +15,7 @@ while True:
     
     #データ読み込み
     xh = i2c.read_byte_data(address, 0x32)
-    print(xh)
+    print(bin(xh))
 
     xh_shift = xh << 8
-    print(xh_shift)
+    print(bin(xh_shift))
