@@ -29,12 +29,12 @@ while True:
     z2_shift = z2 << 8
 
     print("------------")
-    # print(bin(x1_shift))
-    # print(bin(x2_shift))
-    # print(bin(y1_shift))
-    # print(bin(y2_shift))
-    # print(bin(z1_shift))
-    # print(bin(z2_shift))
+    print(bin(x1_shift))
+    print(bin(x2_shift))
+    print(bin(y1_shift))
+    print(bin(y2_shift))
+    print(bin(z1_shift))
+    print(bin(z2_shift))
     print(bin(x1))
     print(bin(x2))
     print(bin(y1))
