@@ -117,7 +117,7 @@ def write_csv(latitude, longitude, x, y):
 	data_csv = [latitude, longitude, x, y]
 	dat = 1
 	folder_name = "goal"
-# 	file_name = "gps.csv"
+	file_name = "gps.csv"
 # 	file_name = "goal.csv"
 	
 	if (x is not None) and (y is not None):
