@@ -15,6 +15,6 @@ while True:
     x = x-3
     y = y+5 
     z = z-4
-    print("x={：．4f},y={:.4f},z={:.4f}".format(x, y, z))
+    print("x={:.4f},y={:.4f},z={:.4f}".format(x, y, z))
     # print("x=%f, y=%f,z=%f m/s^2" % accelerometer.acceleration)
     time.sleep(0.2)
