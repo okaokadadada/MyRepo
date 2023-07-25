@@ -13,7 +13,7 @@ while True:
     # print(accelerometer.acceleration)
     x, y, z = accelerometer.acceleration
     x = x-3
-    y = y+5 
+    y = y+5.8 
     z = z+6
     print("x={:.4f},y={:.4f},z={:.4f}".format(x, y, z))
     # print("x=%f, y=%f,z=%f m/s^2" % accelerometer.acceleration)
