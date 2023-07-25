@@ -10,6 +10,11 @@ i2c = board.I2C()  # uses board.SCL and board.SDA
 accelerometer = adafruit_adxl37x.ADXL375(i2c)
 
 while True:
-    print(accelerometer.acceleration)
+    # print(accelerometer.acceleration)
+    x, y, z = accelerometer.acceleration
+    x = x-3
+    y = y+5 
+    z = z-4
+    print(f"x={x},y={y},z={z}")
     # print("x=%f, y=%f,z=%f m/s^2" % accelerometer.acceleration)
     time.sleep(0.2)
