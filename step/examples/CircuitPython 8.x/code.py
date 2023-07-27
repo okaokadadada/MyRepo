@@ -13,7 +13,7 @@ accelerometer = adafruit_adxl37x.ADXL375(i2c)
 
 folder_name = "record"
 now = datetime.datetime.now()
-filename = folder_name + '/log_' + now.strftime('%Y%m%d_%H%M%S') + '.csv'
+file_name = folder_name + '/log_' + now.strftime('%Y%m%d_%H%M%S') + '.csv'
 
 
 while True:
