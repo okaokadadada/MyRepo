@@ -6,6 +6,7 @@ import board
 import adafruit_adxl37x
 import numpy as np
 import datetime
+import csv
 
 i2c = board.I2C()  # uses board.SCL and board.SDA
 # i2c = board.STEMMA_I2C()  # For using the built-in STEMMA QT connector on a microcontroller
