@@ -31,4 +31,4 @@ while True:
         writer = csv.writer(f)
         writer.writerow(data_csv)
     
-    time.sleep(0.05)
+    time.sleep(0.01)
