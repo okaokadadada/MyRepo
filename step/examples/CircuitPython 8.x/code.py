@@ -23,12 +23,12 @@ while True:
     x = x-3
     y = y+5.8 
     z = z+10
-    norm = np.sqrt(x*x + y*y + z*z)
-    print("norm={:.4f},x={:.4f},y={:.4f},z={:.4f}".format(norm, x, y, z))
+    norm = np.sqrt(x*x + y*y + z*z)/9.8
+    print("norm={:.4f}G,x={:.4f},y={:.4f},z={:.4f}".format(norm, x, y, z))
     # print("x=%f, y=%f,z=%f m/s^2" % accelerometer.acceleration)
     data_csv = [norm, x, y, z]
     with open(file_name, 'a') as f:
         writer = csv.writer(f)
         writer.writerow(data_csv)
     
-    time.sleep(0.2)
+    time.sleep(0.05)
