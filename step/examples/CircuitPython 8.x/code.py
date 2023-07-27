@@ -22,7 +22,7 @@ while True:
     x, y, z = accelerometer.acceleration
     x = x-3
     y = y+5.8 
-    z = z+6
+    z = z+10
     norm = np.sqrt(x*x + y*y + z*z)
     print("norm={:.4f},x={:.4f},y={:.4f},z={:.4f}".format(norm, x, y, z))
     # print("x=%f, y=%f,z=%f m/s^2" % accelerometer.acceleration)
