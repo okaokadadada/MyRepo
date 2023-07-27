@@ -12,8 +12,8 @@ i2c = board.I2C()  # uses board.SCL and board.SDA
 accelerometer = adafruit_adxl37x.ADXL375(i2c)
 
 folder_name = "record"
-jp_time = datetime.datetime.utcnow() + datetime.timedelta(hours=DIFF_JST_FROM_UTC)
-file_name = folder_name + str(jp_time).replace(' ', '_').replace(':', '-').replace('.', '_') + '.csv'
+now = datetime.datetime.now()
+filename = folder_name + '/log_' + now.strftime('%Y%m%d_%H%M%S') + '.csv'
 
 
 while True:
